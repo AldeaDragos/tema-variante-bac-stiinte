@@ -174,6 +174,30 @@ void subiectul3ex2V2(int v[],int dim) {
 
 }
 
+void subiectul3ex3V2(int v1[], int dim1, int v2[], int dim2) {
+
+	int ct = 0;
+
+	int f1[100]{};
+	int f2[100]{};
+
+	numarAparitii(v1, dim1, f1);
+	numarAparitii(v2, dim2, f2);
+
+	for (int i = 0; i < dim1; i++) {
+		for (int j = 0; j < dim2; j++) {
+
+			if (f1[v1[i]] == f2[v2[j]]) {
+				ct++;
+			}
+
+		}
+	}
+	
+	cout << ct << endl;
+		
+}
+
  // VARIANTA 3
 
 void subiectul2ex3V3(int a[100][100],int n,int m) {
@@ -334,7 +358,7 @@ void bubbleSortDesc(int v[], int dim) {
 	} while (sortat == false);
 }
 
-int subiectul3Ex3V4(int v[], int dim) {
+int subiectul3Ex3V4(int v[], int dim)       {
 
 	bubbleSortDesc(v, dim);
 

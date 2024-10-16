@@ -58,6 +58,19 @@ void sol6() {
 
 }
 
+void sol7() {
+
+	int v1[] = { 1,6,3,1,3,7,6,1 };
+
+	int dim1 = 8;
+
+	int v2[] = { 6,1,3 };
+
+	int dim2 = 3;
+
+	subiectul3ex3V2(v1, dim1, v2, dim2);
+
+}
 //VARIANTA 3
 
 void sol8() {
